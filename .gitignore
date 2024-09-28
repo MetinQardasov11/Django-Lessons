@@ -1,0 +1,53 @@
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.log
+
+# Django specific
+*.sqlite3
+db.sqlite3
+*.pot
+*.py[co]
+*.mo
+*.log
+*.pot
+local_settings.py
+
+# Environment variables
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+Pipfile
+Pipfile.lock
+
+# Migrations
+*/migrations/*
+!*/migrations/__init__.py
+
+# Static and media files
+/static/
+/media/
+
+# Ignore IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# macOS specific
+.DS_Store
+
+# Coverage and testing
+.coverage
+.tox/
+.pytest_cache/
+coverage.xml
+nosetests.xml
+test_*.xml

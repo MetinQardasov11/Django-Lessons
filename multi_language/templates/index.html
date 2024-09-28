@@ -1,0 +1,19 @@
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>{% trans "My name is Metin" %}</h2>
+
+    <a href="{% url 'set-language' 'az' %}">AZ</a><br><br>
+    <a href="{% url 'set-language' 'de' %}">DE</a><br><br>
+    <a href="{% url 'set-language' 'en' %}">EN</a><br><br>
+    <a href="{% url 'set-language' 'ru' %}">RU</a><br><br>
+    <a href="{% url 'set-language' 'tr' %}">TR</a><br><br>
+</body>
+</html>

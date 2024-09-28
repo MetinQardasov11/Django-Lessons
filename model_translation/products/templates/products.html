@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for product in products %}
+        <h1>{{ product.title }}</h1>
+        <p>{{ product.description }}</p>
+    {% endfor %}
+
+    <br><br>
+
+    <a href="{% url 'set-language' 'az' %}">AZ</a> <br><br>
+    <a href="{% url 'set-language' 'de' %}">DE</a> <br><br>
+    <a href="{% url 'set-language' 'en' %}">EN</a> <br><br>
+    <a href="{% url 'set-language' 'tr' %}">TR</a> <br><br>
+
+</body>
+</html>
